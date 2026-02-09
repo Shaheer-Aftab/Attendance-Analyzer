@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Attendance Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lecture Attendance Analyzer</h1>
+
+        <div class="input-section">
+            <label>Total Lectures:</label>
+            <input type="number" id="totalLectures" min="1" placeholder="Enter total lectures">
+            
+            <label>Lectures Attended:</label>
+            <input type="number" id="attendedLectures" min="0" placeholder="Enter attended lectures">
+        </div>
+
+        <div class="output-section">
+            <p>Attendance: <span id="attendancePercent">0%</span></p>
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+            <p>Status: <span id="status">-</span></p>
+            <p>Lectures Needed for 80%: <span id="lecturesNeeded">-</span></p>
+        </div>
+
+        <button id="calculateBtn">Calculate</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
